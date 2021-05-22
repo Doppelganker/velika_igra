@@ -8,12 +8,49 @@ const routes = [
     component: Home
   },
   {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    path: '/1',
+    name: 'Naloga 1',
+    component: () => import('../views/Naloga1.vue')
+  },
+  {
+    path: '/2',
+    name: 'Naloga 2',
+    component: () => import('../views/Naloga2.vue')
+  },
+  {
+    path: '/3',
+    name: 'Naloga 3',
+    component: () => import('../views/Naloga3.vue')
+  },
+  {
+    path: '/4',
+    name: 'Naloga 4',
+    component: () => import('../views/Naloga4.vue')
+  },
+  {
+    path: '/5',
+    name: 'Naloga 5',
+    component: () => import('../views/Naloga5.vue')
+  },
+  {
+    path: '/6',
+    name: 'Naloga 6',
+    component: () => import('../views/Naloga6.vue')
+  },
+  {
+    path: '/7',
+    name: 'Naloga 7',
+    component: () => import('../views/Naloga7.vue')
+  },
+  {
+    path: '/8',
+    name: 'Naloga 8',
+    component: () => import('../views/Naloga8.vue')
+  },
+  {
+    path: '/konec',
+    name: 'Cestitke',
+    component: () => import('../views/Cestitke.vue')
   }
 ]
 

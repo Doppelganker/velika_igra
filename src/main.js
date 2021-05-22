@@ -2,9 +2,11 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 import './assets/tailwind.css'
+import store from './store'
 
-const app = createApp(App).use(router).mount('#app')
+createApp(App).use(store).use(router).mount('#app')
 
 window.hack = function() {
-  app.$refs.foo.check = false
+  document.getElementById('Button1').disabled = false
+  return 'Uspeh'
 }
