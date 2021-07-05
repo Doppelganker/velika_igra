@@ -5,6 +5,7 @@
         Matematika
       </template>
       Zapiši 21 v binarnem sistemu
+      Za pomoč so vam lahko animatorji.
       <template v-slot:secret>
         2. ______ lepa kot cvetica pisana, usmiljena kraljica. Skrbno vlada za nemočne ljudi. ______ tri dni se je postila, upala, ponižno je molila, da vsemogočni ljudstvo rešil bi.
       </template>
