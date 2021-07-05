@@ -146,7 +146,12 @@
     <div v-if="completed">V konzoli zaženi "hack();" metodo. Konzolo odpreš z "desni klik" in "preglej" ali (CTRL + SHIFT + I) </div>
     <button id="Button1" class="btn btn-blue flex-none w-40 self-end disabled:opacity-0" disabled @click="hack=true">Spremeni Svet</button>
   </div>
-  <div v-if="hack">Razreši me!</div>
+  <vue-countdown v-if="hack && !timer" :time="5 * 60 * 1000" :interval="100" v-slot="{ minutes, seconds }" @end="timer = true">
+    Preostali čas: {{ minutes }} min : {{ seconds }} s
+  </vue-countdown>
+  <div v-if="timer">
+    Kaj je čas potekel?
+  </div>
   <div v-if="hack" class="flex">
     <input class="input input-blue" maxlength="1" v-model="crka1" placeholder="1" />
     <input class="input input-blue" maxlength="1" v-model="crka2" placeholder="2"/>
@@ -165,14 +170,16 @@
 
 <script>
 import Modal from '../components/Modal.vue'
+import VueCountdown from '@chenfengyuan/vue-countdown'
 
 export default {
   components: {
-    Modal
+    Modal, VueCountdown
   },
   data(){
     return {
       hack: false,
+      timer: false,
       check: [false, false, false, false, false, false, false, false],
       crka1: '',
       crka2: '',
@@ -198,14 +205,10 @@ export default {
   },
   watch: {
     correct(newValue) {
-      if(newValue.toLowerCase() == 'vedoželjnost') {
+      if(newValue.toLowerCase() === 'vedoželjnost') {
         this.$router.push('/konec')
       }
     }
   }
 }
 </script>
-
-<style>
-
-</style>
