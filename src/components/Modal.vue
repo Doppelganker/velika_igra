@@ -91,7 +91,7 @@ export default {
     },
     check() {
       this.error = false
-      if(this.input.toUpperCase() === this.answer) {
+      if(this.input.toUpperCase() === this.answer || this.answer === '') {
         this.isCompleted = true
         this.$emit('solved')
       } else {
