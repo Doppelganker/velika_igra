@@ -144,6 +144,14 @@
       </template>
     </Modal>
 
+    <Modal answer="201" :hack="hack" v-on:solved="check[8] = true">
+      <template v-slot:title>
+        Odpiranje ključavnice
+      </template>
+      Odprite ključavnico, s spodnjimi namigi
+      <img class="self-center" src="../assets/Naloga8.png" width="720" />
+    </Modal>
+
     <div v-if="completed">V konzoli zaženi "hack();" metodo. Konzolo odpreš z "desni klik" in "preglej" ali (CTRL + SHIFT + I) </div>
     <button id="Button1" class="btn btn-blue flex-none w-40 self-end disabled:opacity-0" disabled @click="hack=true">Spremeni Svet</button>
   </div>
