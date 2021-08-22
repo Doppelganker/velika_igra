@@ -57,6 +57,35 @@
       </template>
       Skupaj zapojte (lahko tudi zaplešete).
     </Modal>
+
+    <Modal answer="6" :hack="false" v-on:solved="check[8] = true">
+      <template v-slot:title>
+        Hišne številke
+      </template>
+      Rok stanuje na ulic,  kjer so številke oštevilčene s številkami od 1 do 22. Kolikokrat je na hišnih številkah zapisana številka 2?
+    </Modal>
+
+    <Modal answer="4" :hack="false" v-on:solved="check[9] = true">
+      <template v-slot:title>
+        Božični okraski
+      </template>
+      Nuša je imela 12 kroglic in 12 barvnih trakov. Izdelovala je novoletne okraske. Za vsak okrasek je porabila 2 kroglici in 3 barvne trakove. Največ koliko okraskov je naredila?
+    </Modal>
+
+    <Modal answer="9" :hack="false" v-on:solved="check[10] = true">
+      <template v-slot:title>
+        Aligatorčki
+      </template>
+      Manca je za Petjo pripravila zakopliciran račun, pomagaj ji ga rešiti.
+      0 + 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 - 8 - 7 - 6 - 5 - 4 - 3 - 2 - 1 - 0
+    </Modal>
+
+    <Modal answer="" :hack="false" v-on:solved="check[11] = true">
+      <template v-slot:title>
+        Barvanje
+      </template>
+      Na papir narišite čimveč črt, ki se lahko sekajo. Na listu bo nastalo več likov. Pobarvajte z čim manj barvami, tako da liki, ki se dotikajo ne smejo biti iste barve. Meni uspe z 4 barvami, pa vam?
+    </Modal>
   </div>
 </template>
 
@@ -69,7 +98,7 @@ export default {
   },
   data() {
     return {
-      check: [false, false, false, false, false, false, false, false]
+      check: [false, false, false, false, false, false, false, false, false, false, false, false]
     }
   },
   computed: {

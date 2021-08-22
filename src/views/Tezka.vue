@@ -128,7 +128,7 @@
       <template v-slot:title>
         Rojstni dan
       </template>
-      Animator Timen bo čez 4 leta start toliko, kot znaša vsota števk, njegovega letnice rojstva. Koliko je star Timen?
+      Animator Timen bo čez 4 leta star toliko, kot znaša vsota števk, njegovega letnice rojstva. Koliko je star Timen?
       <template v-slot:secret>
         9. Osnovna enota za silo
       </template>
@@ -138,7 +138,7 @@
       <template v-slot:title>
         Družabne igre
       </template>
-      V igri **** so po metu, premaknemo za vsoto rezultatov na dnu obeh kock. Za koliko mest se najpogosteje premaknemo?
+      V igri **** se po metu, premaknemo za vsoto rezultatov na dnu obeh kock. Za koliko mest se najpogosteje premaknemo?
       <template v-slot:secret>
         1. Prva črka svetopisemske knjige, ki se začne z: Pesem pesmi, ki je Salomonova.
       </template>
@@ -148,7 +148,7 @@
       <template v-slot:title>
         Odpiranje ključavnice
       </template>
-      Odprite ključavnico, s spodnjimi namigi
+      Odprite kovček s ključavnico, s spodnjimi namigi
       <img class="self-center" src="../assets/Naloga8.png" width="720" />
     </Modal>
 
@@ -189,7 +189,7 @@ export default {
     return {
       hack: false,
       timer: false,
-      check: [false, false, false, false, false, false, false, false],
+      check: [false, false, false, false, false, false, false, false, false],
       crka1: '',
       crka2: '',
       crka3: 'd',
